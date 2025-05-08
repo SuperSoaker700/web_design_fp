@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Elan | Elan's Travel Blog</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Elan's Travel Blog</h1>
+            <nav>
+                <ul>
+                    <li><a href="index.html" class="active">Home</a></li>
+                    <li><a href="blog.html">My Story</a></li>
+                    <li><a href="destinations.html">Destinations</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <div class="welcome-container">
+            <h1>Welcome to My Travel Blog</h1>
+        </div>
+<div class="content-wrapper">
+        <aside class="left-nav">
+            <h2>Social</h2>
+            <ul>
+                <li><a href="">Instagram</a></li>
+                <li><a href="">Whatsapp</a></li>
+                <li><a href="">YouTube</a></li>
+                <li><a href="">Shop</a></li>
+				<br>
+				<br>
+				<br>
+            </ul>
+        </aside>
+        <div class="container">
+            <article>
+                <h1 class="about-header">About Me</h1>
+                <div class="about-container">
+                    <p class="about-text">Hey! I'm Elan, a passionate traveler and writer. My blog is dedicated to documenting my journeys and experiences. I started this blog to share my adventures and inspire others by sharing the positive aspects of the world. Stay tuned!<br><br> Contact: e-schwartz5@hvcc.edu (555)555-5555 </p>
+                    <img src="myprofile.jpg" alt="Elan's Profile Picture">
+                </div>
+
+                <!-- Message Me -->
+                <div class="message-form-container">
+                    <h2>Message Me Directly</h2>
+                    <form action="blank-for-now" method="POST">
+                        <label for="name">Your Name</label>
+                        <input type="text" id="name" name="name" placeholder="Enter your name" required>
+
+                        <label for="email">Your Email</label>
+                        <input type="email" id="email" name="email" placeholder="Enter your email" required>
+
+                        <label for="contact-method">Preferred Contact Method</label>
+                        <div class="radio-group">
+                            <label>Email <input type="radio" name="contact" value="email" required></label>
+                            <label>Phone <input type="radio" name="contact" value="phone"></label>
+                            <label>Text Message <input type="radio" name="contact" value="text"></label>
+                        </div>
+
+                        <label for="reason">Reason for Contact</label>
+                        <select name="reason" id="reason" required>
+                            <option value="feedback">Feedback</option>
+                            <option value="collaboration">Collaboration</option>
+                            <option value="other">Other</option>
+                        </select>
+
+                        <div class="checkbox-container">
+                            <label for="subscribe">Subscribe to Newsletter</label>
+                            <input type="checkbox" id="subscribe" name="subscribe">
+                        </div>
+
+                        <label for="message">Your Message</label>
+                        <textarea id="message" name="message" placeholder="Type your message here..." required></textarea>
+
+                        <button type="submit">Send Message</button>
+                    </form>
+                </div>
+            </article>
+        </div>
+    </main>
+
+    <footer>
+    </footer>
+</body>
+</html>
