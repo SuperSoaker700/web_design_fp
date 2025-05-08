@@ -1,0 +1,321 @@
+/* Import Google Fonts */ 
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&family=Merriweather:wght@300;700&display=swap');
+
+/* General reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-image: url('https://wallpapershome.com/images/pages/pic_h/26542.jpg');
+    background-size: cover; 
+    background-position: center;
+    background-attachment: fixed; 
+    background-repeat: no-repeat;
+    color: #333; /* Dark text */
+}
+
+/* Header */
+header {
+    background: url('banner.jpeg') no-repeat center center; /* Banner image */
+    background-size: cover;
+    color: #ffffff;
+    padding: 20px 0;
+    text-align: center;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    position: relative;
+    overflow: hidden;
+    z-index: 0;
+}
+
+header::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 33, 71, 0.9);
+    z-index: -1;
+}
+
+header h1 {
+    font-family: 'Merriweather', serif;
+    font-size: 2.2rem;
+    letter-spacing: 1px;
+    position: relative;
+    z-index: 1;
+}
+
+/* Navigation */
+nav {
+    position: relative;
+    z-index: 1;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    background: #003366;
+    padding: 12px 0;
+    border-bottom: 3px solid #ffcc00;
+}
+
+nav ul li {
+    margin: 0 20px;
+}
+
+nav ul li a {
+    color: #ffcc00;
+    text-decoration: none;
+    font-size: 1.1rem;
+    font-weight: 600;
+    padding: 8px 12px;
+    transition: color 0.3s, background 0.3s;
+    border-radius: 5px;
+}
+
+nav ul li a:hover {
+    background-color: #ffcc00;
+    color: #003366;
+}
+
+/* left nav */
+.content-wrapper {
+    display: flex;
+    gap: 20px;
+}
+
+.left-nav {
+    width: 200px;
+    background-color: #003366;
+    padding: 15px;
+    color: #ffffff;
+    border-radius: 10px;
+    height: fit-content;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.left-nav h2 {
+    font-family: 'Merriweather', serif;
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+.left-nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+.left-nav ul li {
+    margin-bottom: 8px;
+}
+
+.left-nav ul li a {
+    color: #ffcc00;
+    text-decoration: none;
+    font-size: 1rem;
+    display: block;
+    transition: background 0.3s, color 0.3s;
+}
+
+.left-nav ul li a:hover {
+    background: #ffcc00;
+    color: #003366;
+
+}
+
+
+/* Active link */
+nav ul li a.active {
+    background-color: #ffcc00;
+    color: #002147;
+    font-weight: bold;
+}
+
+/* Main content */
+main {
+    padding: 40px;
+    background-color: #ffffff;
+    max-width: 900px;
+    margin: 20px auto;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Welcome Section */
+.welcome-container {
+    background-color: #f0f0f0;
+    padding: 20px;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+/* About Section */
+.about-container {
+    display: flex;
+    align-items: flex-start;
+}
+
+.about-text {
+    flex: 1;
+}
+
+.about-container img {
+    width: 150px;
+    height: auto;
+    border-radius: 10px;
+    margin-left: 15px;
+}
+
+/* Message Form */
+.message-form-container {
+    background: #f9f9f9;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+    margin-top: 20px;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.message-form-container h2 {
+    font-family: 'Merriweather', serif;
+    color: #002147;
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+.message-form-container label {
+    display: block;
+    margin-top: 15px;
+    font-weight: bold;
+    color: #003366;
+}
+
+ .message-form-container label {
+            display: block;
+            margin-top: 10px;
+        }
+
+        .radio-group {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            gap: 0px;
+        }
+
+        .radio-group label {
+            display: flex;
+            align-items: center;
+            justify-content: flex-start;
+            gap: 8px;
+            width: 100%;
+        }
+
+        .radio-group input[type="radio"] {
+            margin-left: auto;
+        }
+
+.message-form-container input,
+.message-form-container textarea {
+    width: 100%;
+    padding: 12px;
+    margin-top: 5px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 1rem;
+    background-color: #ffffff;
+    transition: border 0.3s;
+}
+
+.message-form-container input:focus,
+.message-form-container textarea:focus {
+    outline: none;
+    border-color: #003366;
+    box-shadow: 0 0 5px rgba(0, 51, 102, 0.2);
+}
+
+.message-form-container textarea {
+    resize: vertical;
+    height: 150px;
+}
+
+.message-form-container button {
+    background: #003366;
+    color: #ffcc00;
+    border: none;
+    padding: 12px 18px;
+    font-size: 1.1rem;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 15px;
+    display: block;
+    width: 100%;
+    transition: background 0.3s, color 0.3s;
+    font-weight: bold;
+}
+
+.message-form-container button:hover {
+    background: #ffcc00;
+    color: #003366;
+}
+
+    .message-form-container label {
+            display: block;
+            margin-top: 10px;
+        }
+
+        .message-form-container input[type="radio"] {
+            margin-right: 8px;
+        }
+
+      
+
+/* Blog post */
+.blog-post {
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    padding: 25px;
+    border-radius: 10px;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+    margin: 20px 0;
+}
+
+.blog-post h2 {
+    font-family: 'Merriweather', serif;
+    color: #002147;
+    font-size: 1.8rem;
+}
+
+.blog-post p {
+    font-size: 1rem;
+    margin-top: 10px;
+    color: #555;
+}
+
+.new-zealand-image video {
+    width: 100%;
+    max-width: 800px;
+    height: auto;
+    border-radius: 10px; 
+    margin-top: 15px;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1); 
+    overflow: hidden;
+}
+
+.new-zealand-image img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    margin-top: 20px;
+}
+
+footer {
+
+}
